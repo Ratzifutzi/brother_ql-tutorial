@@ -18,18 +18,19 @@ qlr = BrotherQLRaster(printer_model)
 
 # Convert the image to label instructions
 instructions = convert(
-    qlr=qlr,
-    images=[image],
-    label=label_type,
-    rotate='auto',
-    threshold=70.0,
-    dither=False,
-    compress=True,
-    red=False,
-    dpi_600=False,
-    hq=True,
-    cut=True
+    qlr=qlr,				# The BrotherQLRaster object created earlier
+    images=[image],			# List of images to print (in this case, just one)
+    label=label_type,		# The type of label being used (e.g., '62')
+    rotate='32',			# Rotation angle of the image. Use angles dividiable by 90 for better prints. 0-360
+    threshold=70.0,			# Threshold for converting color images to black and white (0-255)
+    dither=False,			# Whether to apply dithering to the image (False for no dithering)
+    compress=True,			# Whether to compress the print data (True for compression)
+    red=False,				# Whether to print in red (for printers supporting two-color printing)
+    dpi_600=False,			# Whether to use 600 DPI printing (False for standard resolution)
+    hq=True,				# Whether to use high-quality print mode. False for faster prints but lower quality.
+    cut=True				# Whether to cut the label after printing
 )
+
 
 # Print the label
 try:

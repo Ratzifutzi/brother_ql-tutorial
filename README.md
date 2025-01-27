@@ -39,6 +39,11 @@ Go to brothers web page and download the driver installer for your printer. When
 	3. Go to "Print Configuration"
 	4. Select "All". This will print around 30cm of tape.
 	5. On the print, look for \<IP Settings\>, the line below that should say "IP Adress". Write down that number
+5. We also have to change the print settings to "Raster"
+	1. Press "Menu"
+	2. Go to "Administration"
+	3. Go to "Command Mode"
+	4. And select "Raster"
 
 # Update the program
 1. Change "printer_model" to your printer. Make sure to write down the major version of it \-\> if you have a "QL-820NWB***c***", remove the "C" and use "QL-820NWB" in the variable
