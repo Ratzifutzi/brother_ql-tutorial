@@ -49,7 +49,9 @@ Go to brothers web page and download the driver installer for your printer. When
 After all that trouble, you should now be able to print out labels. Just run the script \:)
 <br>
 If you still run into issues, contact me either on
+
 Discord: `ratzifutzi`
+
 Mail: `joshua@hyper-tech.ch`
 <br>
 It would be nice if you contact me, so I can help other people figure this annoying thing out for themselves \:) I hope this tutorial was at least a bit helpful and I wish you a wonderful day.
