@@ -20,7 +20,8 @@ after uninstall, install the downgraded version:
 pip install Pillow==9.5.0
 ```
 <br>
-**⚠️ If you don't want to downgrade: ⚠️** 
+
+⚠️ **If you don't want to downgrade:** ⚠️
 You will have to manually edit the code of the library. We will need to replace only one single line in the conversion.py file. It is usually located somewhere around
 ```
 C:\Python???\Lib\site-packages\brother_ql\conversion.py
