@@ -10,8 +10,14 @@ printer_connection = 'tcp://169.254.72.185'  # Replace with your printer's IP ad
 label_type = '62'
 
 # Load the image
-image_path = r'C:\Users\ratzi\Documents\Development\Python\BrotherQL\tempQR.png'  # Replace with your image path
-image = Image.open(image_path)
+logo_image_path = './images/logo.png'  # Replace with your image path
+logo_image = Image.open(logo_image_path)
+
+qr_image_path = './images/qr.png'  # Replace with your image path
+qr_image = Image.open(qr_image_path)
+
+text_image_path = './images/text.png'  # Replace with your image path
+text_image = Image.open(text_image_path)
 
 # Create a raster object
 qlr = BrotherQLRaster(printer_model)
@@ -19,7 +25,7 @@ qlr = BrotherQLRaster(printer_model)
 # Convert the image to label instructions
 instructions = convert(
     qlr=qlr,				# The BrotherQLRaster object created earlier
-    images=[image],			# List of images to print (in this case, just one)
+    images=[logo_image, qr_image, text_image],			# List of images to print (in this case, just one)
     label=label_type,		# The type of label being used (e.g., '62')
     rotate='auto',			# Rotation angle of the image. Use angles dividiable by 90 for better prints. 0-360
     threshold=70.0,			# Threshold for converting color images to black and white (0-255)
